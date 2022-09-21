@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/main.css" />
+  <script src="https://kit.fontawesome.com/80cf4292df.js" crossorigin="anonymous"></script>
+  <script type="module" src="./src/main.js"></script>
+  <title>CardList</title>
+</head>
+<body class="app">
+  <header class="app__header">
+    <nav class="app__header__navbar">
+      <h1 class="app__header__navbar__title">Meus cartões</h1>
+    </nav>
+  </header>
+  <main class="app__container">
+    <section class="app__container__cards">
+      <ul class="app__container__cards__carousel">
+        <div class="app__container__cards__carousel__card"></div>
+      </ul>
+
+      <div class="app__container__cards__indicator">
+        <span class="app__container__cards__indicator__dot --active"></span>
+        <span class="app__container__cards__indicator__dot"></span>
+      </div>
+    </section>
+
+    <section class="app__container__debts">
+      <div class="app__container__debts__header">
+        <h1 class="app__container__debts__header__title">Minhas dividas</h1>
+      </div>
+      
+      <ul class="app__container__debts__list"></ul>
+    </section>
+  </main>
+
+  <footer class="app__footer">
+    <nav class="app__footer__navbar">
+      <button href="#" class="app__footer__navbar__page">
+        <i class="fa-solid fa-circle-info fa-xl"></i>
+      </button>
+      <button class="app__footer__navbar__plus" onclick="showDebtModal()">
+        <i class="fa-solid fa-plus fa-xl"></i>
+      </button>
+      <button href="#" class="app__footer__navbar__page" onclick="toggleTheme()">
+        <i class="fa-solid fa-gear fa-xl"></i>
+      </button>
+    </nav>
+  </footer>
+
+  <div  class="app__modal --hidden">
+    <div class="app__modal__content">
+    </div>
+  </div>
+
+</body>
+</html>

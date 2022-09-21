@@ -1,0 +1,55 @@
+.app__container__debts__list__item {
+  width: 100%;
+  display: grid;
+  grid-template: "type title value"
+                 "type date value";
+  grid-template-columns: fit-content(100%) 1fr fit-content(100%);
+  grid-template-rows: fit-content(100%) fit-content(100%);
+  row-gap: 5px;
+  column-gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--background-light);
+  cursor: pointer;
+}
+
+.app__container__debts__list__item:active {
+  background-color: var(--background-dark);
+  cursor: pointer;
+}
+
+.app__container__debts__list__item__type {
+  grid-area: type;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 500;
+  background-color: var(--background-dark);
+  color: var(--primary);
+  font-size: 28px;
+}
+
+.app__container__debts__list__item__title {
+  grid-area: title;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-background);
+}
+
+.app__container__debts__list__item__date {
+  grid-area: date;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--text-background);
+  opacity: 0.5;
+}
+
+.app__container__debts__list__item__value {
+  grid-area: value;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-background);
+}

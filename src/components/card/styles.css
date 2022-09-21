@@ -1,0 +1,36 @@
+.app__container__cards__carousel__card {
+  min-width: 100%;
+  aspect-ratio: 5 / 3;
+  /* height: 200px; */
+  display: grid;
+  grid-template: "number flag"
+                 "title title";
+  grid-template-columns: 1fr fit-content(100%);
+  grid-template-rows: 1fr fit-content(100%);
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.app__container__cards__carousel__card__number {
+  grid-area: number;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.app__container__cards__carousel__card__flag {
+  grid-area: flag;
+  width: 100%;
+  height: 100%;
+}
+
+.app__container__cards__carousel__card__title {
+  grid-area: title;
+  font-size: 22px;
+  font-weight: 700;
+}

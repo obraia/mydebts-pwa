@@ -1,0 +1,37 @@
+.app__container__cards__carousel__cardnew {
+  min-width: calc(100%);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.app__container__cards__carousel__cardnew__text {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-background);
+  opacity: 0.3;
+}
+
+.app__container__cards__carousel__cardnew__button {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 35px;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 600;
+  transition: .2s;
+}
+
+.app__container__cards__carousel__cardnew__button:active {
+  filter: brightness(90%);
+  transform: scale(1.1);
+}
